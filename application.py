@@ -9,7 +9,7 @@ application = Flask(__name__)
 @application.route("/")
 def main_page():
     template = ""
-    with open("./src/main1.html", "r") as t:
+    with open("./source/main.html", "r") as t:
         template = t.read()
     return template
 
